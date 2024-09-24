@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ecf0e1;
+    
+}
+
+
+.header .nav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 12px;
+    list-style: none;
+}
+
+.header .nav1 a {
+    text-decoration: none;
+}
+
+.header .nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 250px;
+    margin-top: -100px;
+}
+
+.nav2 {
+    list-style-type: none;
+}
+
+.nav2 > li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav2 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ecf0e1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.nav2 .dropdown-content li {
+    padding: 8px 26px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.nav2 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav2 .dropdown-content li:hover{
+    cursor: pointer;
+    background-color:  #29021c;
+    color: white;
+}
+
+.nav2 .dropdown-content{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+}
+
+.nav2 .dropdown{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+
+}
+.container {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+ .nav-item a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    background-color:  #29021c;
+    color: white;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    margin-bottom: 100px;
+}
+
+.contentform{
+    text-align: center;
+    padding: 20px;
+}
+.contentform h1,h4,p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.name-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.name-inputs input {
+    flex: 1;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group span{
+    color: red;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="loc"] {
+    width: 100%;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #29021c;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color:  #310221;
+}
+
+.confirmation-text {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient( #29021c 0%, rgb(209, 122, 217) 25%, #ecf0e1  50%,  #29021c 75%);
+}
+
+.heading{
+    text-align: center;
+    margin-top: 220px;
+    font-size: 2rem;
+    width:60%;
+    margin-left: 300px;
+}
+
+#animated-text {
+    font-weight: 500;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid black;
+    animation: typing 6s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+    
+}
+  
+
+button{
+    background-color: rgb(209, 167, 207);
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: #29021c;
+    color: white;
+
+}
